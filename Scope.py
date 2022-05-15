@@ -28,3 +28,18 @@ def change():
 
 
 change()
+
+# Nested Function
+
+
+def puja(a, b):
+    print("I am Puja")
+
+    def sums(a, b):
+        result = a + b
+        print(result)
+        return result
+    sums(a, b)
+
+
+puja(3, 7)
