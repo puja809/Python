@@ -1,4 +1,3 @@
-
 Hi all!
 Puja
 I am learning Python
