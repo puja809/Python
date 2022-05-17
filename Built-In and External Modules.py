@@ -16,6 +16,11 @@ print(random.randint(0, 100), "\n")
 # Prints any random number between 0 and 1
 print(random.random())
 
+# random.choice() function: it will select any random value from a sequence:
+lst = ["Snake", "Water", "Gun"]
+print(random.choice(lst))
+
+
 # External Modules:
 
 """
