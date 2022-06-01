@@ -5,8 +5,10 @@ It reduces the delay by storing the function results in cache
 import time
 from functools import lru_cache
 
+n1 = int(input("Enter maxsize: "))
 
-@lru_cache(maxsize=3)
+
+@lru_cache(maxsize=n1)
 def func(n):
     time.sleep(n)
     return n
