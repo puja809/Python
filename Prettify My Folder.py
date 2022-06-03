@@ -21,9 +21,8 @@ def soldier(path, file, extension):
     os.chdir(path)
     lst = os.listdir(path)
     for i in range(0, len(lst), 1):
-        for value in file.values():
-            if lst[i] != value and os.path.isfile(lst[i]) is True:
-                os.rename(lst[i], lst[i].capitalize())
+        if lst[i] != file and os.path.isfile(lst[i]) is True:
+            os.rename(lst[i], lst[i].capitalize())
         if os.path.isfile(lst[i]) is True:
             ls = lst[i].split(".")
             if ls[1] == extension:
@@ -32,5 +31,5 @@ def soldier(path, file, extension):
     pass
 
 
-soldier("D:\\test", {"1":"puja (5) - Copy.txt"}, "docx")
+soldier("D:\\test", "puja.txt", "docx")
 print("Soldier has prettified your folder!!")
