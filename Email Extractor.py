@@ -6,7 +6,9 @@ Write a code to extract all emails for any given string
 import re
 strg = """My Name is puja. email is pujachatterjee@gmail.com
 1730107@kiit.ac.in
-pujach@yahoo.com, kp@msi.comTata Limited
+sonu.yadav@kiit.ac.in
+pujach@yahoo.com, kp@msi.com
+Tata Limited
 Dr. David Landsman, executive director
 18, Grosvenor Place
 London SW1X 7HSc
@@ -31,7 +33,7 @@ Directions: View map fass
 harry bhai lekin
 bahut hi badia aadmi haiaiinaiiiiiiiiiiii"""
 
-pattern = re.compile(r'\w+[@]\w+')
-match = pattern.finditer(strg)
+pattern = re.compile(r'[\w.]+[@][\w.]+')
+match = pattern.findall(strg)
 for matches in match:
     print(matches)
