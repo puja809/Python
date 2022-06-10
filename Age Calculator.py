@@ -26,19 +26,26 @@ if choice == 'A':
     if 150 >= age > 0:
         birth_year = current_year - age
         result_age = year - birth_year
+        hundred = birth_year + 100
         if result_age <= 0:
             print(f"You were not yet born in {year}")
         else:
             print(f"Your age in {year} is {result_age}")
+            print(f"You will turn hundred in the year {hundred}")
     elif age <= 0:
-        print("Age cannot be negative!!")
+        print("Age cannot be negative or Zero!!")
     else:
         print("You seem to be the oldest person alive")
 
 elif choice == 'D':
     dob = int(input("Enter Your DOB: "))
-    result_age = year - dob
-    if result_age <= 0:
-        print(f"You were not yet born in {year}")
+    if dob >= 0:
+        result_age = year - dob
+        hundred = dob + 100
+        if result_age <= 0:
+            print(f"You were not yet born in {year}")
+        else:
+            print(f"Your age in {year} is {result_age}")
+            print(f"You will turn hundred in the year {hundred}")
     else:
-        print(f"Your age in {year} is {result_age}")
+        print("Date of Birth cannot be zero or negative!!!")
