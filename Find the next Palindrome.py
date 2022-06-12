@@ -27,6 +27,11 @@ Next palindrome for 2311 is 2222
 
 
 def is_palindrome(n1):
+    """
+    This Function checks if a number is palindrome or not
+    :param n1: number
+    :return: True of False
+    """
     rem = 0
     temp = n1
     while temp != 0:
