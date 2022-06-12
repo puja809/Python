@@ -44,15 +44,15 @@ def is_palindrome(n1):
         return False
 
 
-choice = int(input("Enter the number of test cases you want to check: "))
-for i in range(choice):
-    n = int(input("Enter a number"))
-    temp1 = n
-    while True:
-        if is_palindrome(n) is True:
-            break
+if __name__ == "__main__":
+    choice = int(input("Enter the number of test cases you want to check: "))
+    for i in range(choice):
+        n = int(input("Enter a number"))
+        temp1 = n
+        while True:
+            if is_palindrome(n) is True:
+                break
 
-        else:
-            n = n + 1
-
-    print(f"The next palindrome of {temp1} is {n}")
+            else:
+                n = n + 1
+        print(f"The next palindrome of {temp1} is {n}")
