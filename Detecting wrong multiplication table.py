@@ -22,7 +22,7 @@ Rohan Das’s Function Input:
 rohanMultiplication(6)
 Rohan’s function returns this output:
 
-[6, 12, 18, 26, …., 60]
+[6, 12, 18, 26, …...., 60]
 
 You have to write a function isCorrect(table, number) and return the index where rohan’s function is
 wrong and print it to the screen! If the table is correct, your function returns None
