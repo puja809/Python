@@ -48,7 +48,7 @@ def is_Correct(n1, mul1):
         lst1.append(result)
     for k in range(len(lst1)):
         if lst1[k] != lst[k]:
-            print(f"The correct result at {k+1} place will be {lst1[k]}")
+            print(f"The correct result at {k+1} place will be {lst1[k]} instead of {lst[k]}")
 
         else:
             pass
