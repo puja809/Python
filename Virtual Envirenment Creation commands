@@ -1,0 +1,24 @@
+Open the powershell(windows user) in the folder where you want to create the virtual environment
+****************************************************************************************************
+1. pip install --user virtualenv     (Install virtual env)
+
+2. python -m virtualenv Martina      (Create a virtual environment called Martina)
+
+3. .\Martina\Scripts\activate        (Activation the virtual environment)
+
+4. deactivate                        (deactivate virtual environment)
+
+5. To create the same environment in other systems we create the requirements.txt for the particular environment
+pip freeze > requirements.txt (To create requirements.txt)
+
+6. pip install -r .\requirements.txt  (To install all the versions in the requirements.txt)
+
+7.python -m virtualenv --system-site-packages Martin (Creating a virtual environment with system Python requirement)
+
+8.
+>>>python
+>>>import pandas
+>>> pandas.__version__                 (To check a module version in Python)
+
+Exercise: Create a virtual environment. In the virtual environment create a function to add two number.
+
