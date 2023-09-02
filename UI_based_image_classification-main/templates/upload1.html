@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Model</title>
+</head>
+<body>
+<div>
+    <img src="{{url_for('static', filename='logo.jpg')}}" alt="N-Square"/>
+</div>
+<h1>Select Model</h1>
+<div id="myRadioGroup">
+    <form method="POST">
+        <input type="radio" name="hello" value="1" id="svc"  checked>
+        <label for="svc">Support Vector Classifier</label><br>
+        <input type="radio" name="hello" value="2" id="knn" >
+        <label for="knn">K Nearest Neighbour</label><br>
+        <input type="radio" name="hello" value="3" id="lr_reg" >
+        <label for="lr_reg">Decision Tree Classifier</label><br>
+        <input type="radio" name="hello" value="4" id="adaboost" >
+        <label for="adaboost">AdaBoost Classifier</label><br>
+        <input type="radio" name="hello" value="5" id="naive">
+        <label for="naive">Naive Bayes(Gaussian)</label><br>
+        <input type="submit">
+    </form>
+</div>
+<div>
+    <h3>Number of classes : </h3>
+    {{num_class}}
+</div>
+</body>
+</html>
